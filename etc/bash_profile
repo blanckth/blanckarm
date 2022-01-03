@@ -21,4 +21,4 @@ vncserver-start;
 vncserver -list;
 echo "Now you can reach Desktop with VNC APP at localhost:13";
 echo "You can use vncserver-start and vncserver-stop for Desktop Env";
-rm "$folder/root/.bash_profile";
+mv "$folder/root/.bash_profile.bak" "$folder/root/.bash_profile";
