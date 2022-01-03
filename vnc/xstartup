@@ -1,9 +1,0 @@
-!/usr/bin/env bash
-## Automatic Installation BlanckArm on Termux android
-## Authur Salar Muhammadi
-#####################################################
-unset SESSION_MANAGER;
-export PULSE_SERVER="127.0.0.1";
-xrdb $HOME/.Xresources;
-dbus-launch startxfce4 &
-
