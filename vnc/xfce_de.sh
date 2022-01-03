@@ -17,5 +17,5 @@ source /etc/profile;
 vncserver-start;
 vncserver-stop;
 ! [[ -f ~/xstartup ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/vnc/xstartup -O ~/xstartup;
-mv ~/xstartup ~/.vnc/xstartup;
+mv ~/xstartup ~/.vnc/;
 chmod +x ~/.vnc/xstartup;
