@@ -3,10 +3,10 @@
 ## Authur Salar Muhammadi
 #####################################################
 echo "Installing XFCE Desktop";
-pacman -S xorg xorg-server --noconfirm;
-pacman -S xfce4 xfce4-goodies --noconfirm;
-pacman -S tigervnc --noconfirm;
-pacman -S tar sed --noconfirm;
+pacman -S xorg xorg-server --needed --noconfirm;
+pacman -S xfce4 xfce4-goodies --needed --noconfirm;
+pacman -S tigervnc --needed --noconfirm;
+pacman -S tar sed --needed --noconfirm;
 ! [[ -f /usr/local/bin/vncserver-start ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/vncserver-start -P /usr/local/bin/;
 ! [[ -f /usr/local/bin/vncserver-stop ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/vncserver-stop -P /usr/local/bin/;
 chmod +x /usr/local/bin/vncserver-stop;
