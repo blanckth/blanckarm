@@ -15,6 +15,6 @@ echo 'export DISPLAY="localhost:0"' >> /etc/profile;
 source /etc/profile;
 vncserver-start;
 vncserver-stop;
-! [[ -f ~/xstartup ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/vnc/xstartup -P ~/xstartup;
+! [[ -f ~/xstartup ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/vnc/xstartup -O ~/xstartup;
 mv ~/xstartup ~/.vnc/xstartup;
 chmod +x ~/.vnc/xstartup;
