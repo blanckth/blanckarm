@@ -1,0 +1,10 @@
+!/usr/bin/env bash
+## Automatic Installation BlanckArm on Termux android
+## Authur Salar Muhammadi
+#####################################################
+export USER=root;
+export HOME=/root;
+vncserver -kill :13;
+rm -rf /root/.vnc/localhost:13.pid;
+rm -rf /tmp/.X1-lock;
+rm -rf /tmp/.X1-unix/X1;
