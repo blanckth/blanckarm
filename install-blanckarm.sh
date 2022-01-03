@@ -47,14 +47,14 @@ mv etc/xfce_de.sh "$folder/root/xfce_de.sh";
 ! [[ -d "$folder/proc/" ]] && mkdir -p "$folder/proc";
 ! [[ -d "$folder/proc/fake/" ]] && mkdir -p "$folder/proc/fake";
 # Copy Fake Things
-! [[ -f fake/stat ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/fake/stat -P fake/;
-! [[ -f fake/vmstat ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/fake/vmstat -P fake/;
-! [[ -f fake/version ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/fake/version -P fake/;
+! [[ -f fake/stat ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/fake/stat -O fake/stat;
+! [[ -f fake/vmstat ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/fake/vmstat -O fake/vmstat;
+! [[ -f fake/version ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/fake/version -O fake/version;
 mv fake/stat "$folder/proc/fake/stat";
 mv fake/vmstat "$folder/proc/fake/vmstat";
 mv fake/version "$folder/proc/fake/version";
 mv "$folder/root/.bash_profile" "$folder/root/.bash_profile.bak";
-! [[ -f etc/bash_profile ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/etc/bash_profile -P etc/;
+! [[ -f etc/bash_profile ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/etc/bash_profile -O etc/bash_profile;
 mv etc/bash_profile "$folder/root/.bash_profile";
 echo "You can now launch Arch Linux with the start-blanckarm script"
 start-blanckarm;
