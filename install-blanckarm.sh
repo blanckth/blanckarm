@@ -44,8 +44,8 @@ mv additional.sh "$folder/root/additional.sh";
 mv resolv.conf "$folder/root/resolv.conf";
 ! [[ -f xfce_de.sh ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/xfce_de.sh;
 mv xfce_de.sh "$folder/root/xfce_de.sh";
-! [[ -d "$folder/proc" ]] && mkdir "$folder/proc";
-! [[ -d "$folder/proc/fake" ]] && mkdir "$folder/proc/fake";
+! [[ -d "$folder/proc/" ]] && mkdir -p "$folder/proc";
+! [[ -d "$folder/proc/fake/" ]] && mkdir -p "$folder/proc/fake";
 # Copy Fake Things
 ! [[ -f stat ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/stat;
 ! [[ -f vmstat ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/vmstat;
