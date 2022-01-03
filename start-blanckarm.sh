@@ -23,7 +23,7 @@ command+=" -b /proc/self/fd:/dev/fd";
 command+=" -b ${folder}/proc/fake/stat:/proc/stat";
 command+=" -b ${folder}/proc/fake/vmstat:/proc/vmstat";
 command+=" -b ${folder}/proc/fake/version:/proc/version";
-command+=" -b $HOME:/root";
+# command+=" -b $HOME:/root";
 command+=" -w /root";
 command+=" /usr/bin/env -i";
 command+=" MOZ_FAKE_NO_SANDBOX=1";
