@@ -10,6 +10,6 @@ echo "disablescdaemon" > /etc/pacman.d/gnupg/gpg-agent.conf;
 pacman-key --populate archlinuxarm;
 chmod 755 /bin /home /mnt /run /srv /tmp /var /boot /etc /opt /root /sbin /sys /usr;
 LC_ALL=C.UTF-8;
-pacman -Syyuu --noconfirm;
-pacman -S wget sudo --noconfirm;
+pacman -Syyuu --needed --noconfirm;
+pacman -S --needed wget sudo --noconfirm;
 #####################################################
