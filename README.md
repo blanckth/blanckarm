@@ -5,9 +5,20 @@
 ```bash
 apt-get update -y && \
 apt-get dist-upgrade -y && \
-apt-get install git -y && \
+apt-get install git wget -y && \
 git clone https://github.com/blanckth/blanckarm.git && \
 cd blanckarm && \
+chmod +x install-blanckarm.sh && \
+./install-blanckarm.sh;
+```
+### OR
+```bash
+apt-get update -y && \
+apt-get dist-upgrade -y && \
+apt-get install wget -y && \
+mkdir blanckarm && \
+cd blanckarm && \
+wget https://raw.githubusercontent.com/blanckth/blanckarm/main/install-blanckarm.sh;
 chmod +x install-blanckarm.sh && \
 ./install-blanckarm.sh;
 ```
