@@ -9,7 +9,6 @@ command+=" --link2symlink";
 command+=" --sysvipc";
 command+=" --kill-on-exit";
 command+=" -0";
-command+=" -v";
 command+=" -r $rootfs";
 command+=" -b /dev";
 command+=" -b /proc";
