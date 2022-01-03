@@ -4,4 +4,4 @@
 #####################################################
 export USER=root;
 export HOME=/root;
-vncserver :13 -name blanckxarm -localhost;
+vncserver :13 -localhost;
