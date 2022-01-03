@@ -30,7 +30,7 @@ if ! [[ -d $folder ]];then
 		mkdir -p "$folder";
 		cd "$folder";
 		echo "Decompressing RootFS, Please be patient.";
-		exec proot --link2symlink -0 tar -xf ${cur}/${tarbal}||:
+		exec proot --link2symlink -0 tar -xf "${cur}/${tarball}"||:
 		cd "$cur";
 	fi;
 fi;
