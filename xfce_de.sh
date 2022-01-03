@@ -18,3 +18,4 @@ vncserver-stop;
 ! [[ -f ~/xstartup ]] && wget https://raw.githubusercontent.com/blanckth/blanckarm/main/xstartup -P ~/xstartup;
 mv ~/xstartup ~/.vnc/xstartup;
 chmod +x ~/.vnc/xstartup;
+vncserver-start;
