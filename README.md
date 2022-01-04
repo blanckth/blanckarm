@@ -24,5 +24,5 @@ chmod +x install-blanckarm.sh && \
 ```
 > ###### Be Patience...
 ##### after successfully Installed you can reach the BlanckArm Desktop 
-##### with a VNC app like [AVNC](https://f-droid.org/en/packages/com.gaurav.avnc/) at localhost:13
+##### with a VNC app like [AVNC](https://f-droid.org/en/packages/com.gaurav.avnc/) at localhost:5913
 #### Enjoy!
